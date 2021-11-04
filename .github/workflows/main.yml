@@ -49,3 +49,4 @@ jobs:
         with:
               #name of my AWS Lambda Function
               function_name: ${{ secrets.AWS_LAMBDA_FUNC_NAME }}
+              source: aruba-central.py
