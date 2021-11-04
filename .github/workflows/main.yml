@@ -48,4 +48,4 @@ jobs:
         uses: appleboy/lambda-action@master
         with:
               #name of my AWS Lambda Function
-              function_name: AWS_LAMBDA_FUNC_NAME
+              function_name: ${{ secrets.AWS_LAMBDA_FUNC_NAME }}
