@@ -5,4 +5,4 @@
     - Is the device synchronised with the template
     - Is the device reachable (up/down)
     - Identifying which devices is connected to the trunk via LLDP
-    - Which SSID are being broadcasted
+    - Which SSIDs are being broadcasted
