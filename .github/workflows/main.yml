@@ -41,4 +41,11 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}          
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}  
+          
+      #Deploy code to AWS lambda
+      - name: AWS Lambda Deploy
+        uses: appleboy/lambda-action@master
+        with:
+              #name of my AWS Lambda Function
+              function_name: AWS_LAMBDA_FUNC_NAME
